@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmar Eliminación</title>
+</head>
+<body>
+  <h1>¿Seguro que deseas eliminar el expediente "<%= expediente.nombre %>"?</h1>
+  <form action="/expedientes/delete/<%= expediente.id %>" method="post">
+    <button type="submit">Eliminar</button>
+  </form>
+  <a href="/expedientes/<%= expediente.id %>">Cancelar</a>
+</body>
+</html>

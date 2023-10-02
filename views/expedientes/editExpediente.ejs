@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Expediente</title>
+</head>
+<body>
+  <h1>Editar Expediente</h1>
+  <form action="/expedientes/edit/<%= expediente.id %>" method="post">
+    <label for="nombre">Nombre del Expediente:</label>
+    <input type="text" id="nombre" name="nombre" value="<%= expediente.nombre %>">
+    <!-- Otros campos del formulario -->
+    <button type="submit">Guardar Cambios</button>
+  </form>
+  <a href="/expedientes">Volver al Listado</a>
+  <a href="/expedientes/<%= expediente.id %>">Ver Detalle</a>
+</body>
+</html>

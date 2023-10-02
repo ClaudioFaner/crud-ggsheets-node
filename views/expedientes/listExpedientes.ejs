@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Listado de Expedientes</title>
+</head>
+<body>
+  <h1>Listado de Expedientes</h1>
+  <ul>
+    <% expedientes.forEach(expediente => { %>
+      <li>
+        <a href="/expedientes/<%= expediente.id %>"><%= expediente.nombre %></a>
+        <a href="/expedientes/edit/<%= expediente.id %>">Editar</a>
+        <a href="/expedientes/delete/<%= expediente.id %>">Eliminar</a>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/expedientes/createExpediente">Crear Expediente</a>
+</body>
+</html>

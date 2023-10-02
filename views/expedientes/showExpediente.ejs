@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expediente</title>
+</head>
+<body>
+  <h1>Detalle del Expediente</h1>
+  <p>Nombre: <%= expediente.nombre %></p>
+  <!-- Otros campos del expediente -->
+  <a href="/expedientes">Volver al Listado</a>
+  <a href="/expedientes/edit/<%= expediente.id %>">Editar</a>
+  <a href="/expedientes/delete/<%= expediente.id %>">Eliminar</a>
+</body>
+</html>
